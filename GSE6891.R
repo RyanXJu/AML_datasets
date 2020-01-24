@@ -26,22 +26,7 @@ data[1:3,1:3]
 # 117_at     5.181898  5.459432  6.006747
 
 platform <- "affy_hg_u133_plus_2"
-probe2gene <- function( v, srcType = platform )
-{
-  ## Retrieve the EMSEMBL -> HUGO mapping
-  ensembl = useMart(biomart= "ensembl",dataset="hsapiens_gene_ensembl")
-  ID <- biomaRt::getBM( attributes=c(srcType, "hgnc_symbol"), filters=srcType, values=v, mart=ensembl )
-  
-  ## Make sure there was at least one mapping
-  if( nrow(ID) < 1 ) top( "No IDs mapped successfully" )
-  
-  ## Drop empty duds
-  j <- which( ID[,2] == "" )
-  if( length(j) > 0 ) ID <- ID[-j,]
-  stopifnot( all( ID[,1] %in% v ) )
-  
-  ID
-}
+source("probe2gene.R")
 
 probes <- rownames(data)
 # probes[1:3]
@@ -49,7 +34,7 @@ probes <- rownames(data)
 
 
 # Map Ensembl IDs to HUGO
-gene_id <- probe2gene( rownames(data) )
+gene_id <- probe2gene( rownames(data), srcType = platform  )
 head(gene_id)
 # affy_hg_u133_plus_2 hgnc_symbol
 # 1        1553551_s_at      MT-ND1

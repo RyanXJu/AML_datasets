@@ -26,22 +26,7 @@ data[1:3,1:3]
 # ILMN_1651199    6.29835   6.369729   6.425103
 
 platform <- "illumina_humanht_12_v4"
-probe2gene <- function( v, srcType = platform )
-{
-  ## Retrieve the EMSEMBL -> HUGO mapping
-  ensembl = useMart(biomart= "ensembl",dataset="hsapiens_gene_ensembl")
-  ID <- biomaRt::getBM( attributes=c(srcType, "hgnc_symbol"), filters=srcType, values=v, mart=ensembl )
-  
-  ## Make sure there was at least one mapping
-  if( nrow(ID) < 1 ) top( "No IDs mapped successfully" )
-  
-  ## Drop empty duds
-  j <- which( ID[,2] == "" )
-  if( length(j) > 0 ) ID <- ID[-j,]
-  stopifnot( all( ID[,1] %in% v ) )
-  
-  ID
-}
+source("probe2gene.R")
 
 probes <- rownames(data)
 # probes[1:3]
@@ -49,7 +34,7 @@ probes <- rownames(data)
 
 
 # Map Ensembl IDs to HUGO
-gene_id <- probe2gene( rownames(data) )
+gene_id <- probe2gene( rownames(data), srcType = platform )
 head(gene_id)
 # illumina_humanht_12_v4 hgnc_symbol
 # 1           ILMN_1653529       TEX10
