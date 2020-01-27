@@ -9,9 +9,10 @@ Stemness label data: RNA-Seq Metadata (301 samples, only 229 have gene expressio
 https://www.synapse.org/#!Synapse:syn3156503/tables/
 
 
-values: Log2 Transform data and standardize
-platform: Illumina HiSeq 2000
-origin: Daily et al., 2017; Salomonis et al., 2016
+values: Log2 Transform data and standardize <br>
+platform: Illumina HiSeq 2000 <br>
+origin: Daily et al., 2017; Salomonis et al., 2016 <br>
+used: Malta, Tathiane M., et al., 2018
 
 
 
@@ -31,3 +32,5 @@ https://www.synapse.org/#!Synapse:syn4983466
 Daily K, Ho Sui SJ, Schriml LM, Dexheimer PJ, Salomonis N, Schroll R, Bush S, Keddache M, Mayhew C, Lotia S, et al. Molecular, phenotypic, and sample-associated data to describe pluripotent stem cell lines and derivatives. Sci Data. 2017; 4:170030. [PubMed: 28350385]
 
 Salomonis N, Dexheimer PJ, Omberg L, Schroll R, Bush S, Huo J, Schriml L, Ho Sui S, Keddache M, Mayhew C, et al. Integrated Genomic Analysis of Diverse Induced Pluripotent Stem Cells from the Progenitor Cell Biology Consortium. Stem Cell Reports. 2016; 7:110–125. [PubMed: 27293150] 
+
+Malta, Tathiane M., et al. "Machine learning identifies stemness features associated with oncogenic dedifferentiation." Cell 173.2 (2018): 338-354.
