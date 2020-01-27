@@ -23,6 +23,9 @@ Used in: Ng, Stanley WK, et al.2016
 
 ### GSE24759 
 data: 38 hematopoietic cell surface marker expression <br>
+rna_seq: microarray <br>
+platform: illumina_humanht_12_v4 <br>
+values: log2-transformed RMA data and normalized such that the mean of each gene is zero <br>
 Origine: Novershtern, Noa, et al. 2011 <br>
 Used in: Ng, Stanley WK, et al.2016
 
