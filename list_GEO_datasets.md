@@ -8,16 +8,24 @@ Used in:
 
 ### GSE6891 
 data: 461+76 AML microarray <br>
+platform: affy_hg_u133_plus_2 <br>
+values: Log2-transformed MAS5 processed intensity after applying a minimum threshold of 30 <br>
 Origine: Verhaak, Roel GW, et al.2009 <br>
 Used in: Wang, Mei, et al. 2018
 
 ### GSE30652  
 data: 239 stem cell microarray <br>
+rna_seq: microarray <br>
+platform: illumina_humanht_12_v4 <br>
+values: The data were normalized by RSN normalization using LUMI package in R <br>
 Origine: Nazor et al. 2012 <br>
 Used in: Malta et al. 2018
 
 ### GSE42414 
 data: 41 human cord blood cell surface expression <br>
+rna_seq: microarray <br>
+platform: illumina_humanht_12_v4 <br>
+values: Quantile normalized and log2 transformed. <br>
 Origine: Laurenti, Elisa, et al. 2013 <br>
 Used in: Ng, Stanley WK, et al.2016
 
@@ -31,8 +39,10 @@ Origine: Novershtern, Noa, et al. 2011 <br>
 Used in: Ng, Stanley WK, et al.2016
 
 ### GSE12417 
-data: 156+70 CN-AML cohorts <br>
+data: 163+79 CN-AML cohorts <br>
 rna_seq: microarray <br>
+platform; Affymetrix Human Genome U133A & U133B (163 training), U133Plus2 (79 test)  <br>
+values: Normalization was performed using the variance stabilizing normalization algorithm, and probe set expression values were calculated by the median polish method. <br>
 Origine: Metzeler, Klaus H., et al 2008 <br>
 Used in: Ng, Stanley WK, et al.2016
 
@@ -41,6 +51,7 @@ data: 138lsc+ & 89lsc- cell fractions from 78 AML <br>
 rna_seq: microarray <br>
 Platforms: illumina_humanht_12_v4 <br>
 labels: cd34/cd38, lsc+/lsc- (Sorted fractions were defined as LSC+ if transplanted cells generated an AML graft in 1 or more mice) <br>
+values: Normalized expression values were log2 transformed.
 Origine: Ng, Stanley WK, et al.2016 <br>
 Used in: 
 
