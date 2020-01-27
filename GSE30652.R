@@ -13,8 +13,8 @@ library(biomaRt)
 
 folder = setwd("/u/juxiao/AML_datasets")
 getwd()
-fnGE = "/u/juxiao/geo_datasets/GSE30652.tsv"
-fnY = "/u/juxiao/geo_datasets/GSE30652_labels.tsv"
+fnGE = "/u/juxiao/geo_datasets/GSE30652/GSE30652.tsv"
+fnY = "/u/juxiao/geo_datasets/GSE30652/GSE30652_labels.tsv"
 
 
 gse <- getGEO("GSE30652",GSEMatrix=TRUE) 
@@ -52,6 +52,7 @@ rownames(X) <- gene_id[,2]
 dim(X)
 
 #Y <- pheno[,c("cell type:ch1")]
+Y<- pheno
 
 write.table(X, file = fnGE, sep = "\t", quote = FALSE, col.names = TRUE)
 write.table(Y, file = fnY, sep = "\t", quote = FALSE, col.names = TRUE)
