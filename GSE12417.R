@@ -1,7 +1,12 @@
 # GSE12417
 # 
-# data: 156+70 CN-AML cohorts
+# data: 163+79 CN-AML cohorts
 # rna_seq: microarray
+# platform; Affymetrix Human Genome U133A & U133B (163 training), 
+#            U133Plus2 (79 test)
+# values: Normalization was performed using the variance stabilizing 
+#           normalization algorithm,and probe set expression values 
+#           were calculated by the median polish method.
 # Origine: Metzeler, Klaus H., et al 2008
 # Used in: Ng, Stanley WK, et al.2016
 

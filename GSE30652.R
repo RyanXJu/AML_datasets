@@ -3,6 +3,7 @@
 # data: 239 stem cell microarray
 # rna_seq: microarray
 # platform: illumina_humanht_12_v4
+# values: The data were normalized by RSN normalization using LUMI package in R
 # Origine: Nazor et al. 2012
 # Used in: Malta et al. 2018
 

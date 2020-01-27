@@ -3,6 +3,7 @@
 # rna_seq: microarray
 # platform: illumina_humanht_12_v4
 # labels: cd34/cd38, lsc+/lsc-
+# values:Normalized expression values were log2 transformed.
 # Origine: Ng, Stanley WK, et al.2016 
 
 library(GEOquery)

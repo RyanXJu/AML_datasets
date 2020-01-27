@@ -2,6 +2,7 @@
 # 
 # data: 461+76 AML microarray
 # platform: affy_hg_u133_plus_2
+# values: Log2-transformed MAS5 processed intensity after applying a minimum threshold of 30
 # Origine: Verhaak, Roel GW, et al.2009
 # Used in: Wang, Mei, et al. 2018
 

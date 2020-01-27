@@ -3,6 +3,7 @@
 # data: 41 human cord blood cell surface expression
 # rna_seq: microarray
 # platform: illumina_humanht_12_v4
+# values: Quantile normalized and log2 transformed.
 # Origine: Laurenti, Elisa, et al. 2013
 # Used in: Ng, Stanley WK, et al.2016
 
