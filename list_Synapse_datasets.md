@@ -17,6 +17,7 @@ used: Malta, Tathiane M., et al., 2018
 
 
 ### PANCAN (TCGA PancanAtlas Data) The Cancer Genome Atlas Program
+https://www.synapse.org/#!Synapse:syn4557014
 
 Merged and Normalized RNA-Seq data (level 3 RNA-seq expression): EB++AdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv (11070 samples)
 Detail: https://www.biostars.org/p/362616/
@@ -26,6 +27,12 @@ https://www.synapse.org/#!Synapse:syn4976369
 
 Clinical labels: clinical_PANCAN_patient_with_followup.tsv (10956 samples)
 https://www.synapse.org/#!Synapse:syn4983466
+
+
+### TCGA-LAML info ###
+RTCGA package https://github.com/RTCGA/RTCGA/issues/51
+LAML.rnaseq contains 173 samples
+LAML.clinical contains 200 samples (only 173 have rnaseq data)
 
 
 ### References
