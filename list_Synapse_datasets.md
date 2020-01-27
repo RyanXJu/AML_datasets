@@ -8,6 +8,9 @@ https://www.synapse.org/#!Synapse:syn2701943
 Stemness label data: RNA-Seq Metadata (301 samples, only 229 have gene expression data in the data above)
 https://www.synapse.org/#!Synapse:syn3156503/tables/
 
+
+values: Log2 Transform data and standardize
+platform: Illumina HiSeq 2000
 origin: Daily et al., 2017; Salomonis et al., 2016
 
 
