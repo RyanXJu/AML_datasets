@@ -34,7 +34,7 @@ Used in: Ng, Stanley WK, et al.2016
 data: 163+79 CN-AML cohorts <br>
 rna_seq: microarray <br>
 platform; Affymetrix Human Genome U133A & U133B (163 training), U133Plus2 (79 test)  <br>
-values: Normalization was performed using the variance stabilizing normalization algorithm, and probe set expression values were calculated by the median polish method.
+values: Normalization was performed using the variance stabilizing normalization algorithm, and probe set expression values were calculated by the median polish method. <br>
 Origine: Metzeler, Klaus H., et al 2008 <br>
 Used in: Ng, Stanley WK, et al.2016
 
