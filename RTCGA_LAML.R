@@ -60,8 +60,13 @@ clinical <- LAML.clinical[, colnames(LAML.clinical) %in% keeps]
 # ###### survival time = last follow up/ death
 # LAML.survInfo <- survivalTCGA(LAML.clinical,
 #                               extract.cols = "admin.disease_code")
-
 X<- LAML.rnaseq
+f <- function( v ) unlist( lapply( strsplit( v, "\\|" ), "[[", 1 ) )
+
+colnames(X) <- f(colnames(X))
+X <- X[, colnames(X) != "?"]
+
+
 Y<- clinical
 
 write.table(X, file = fnGE , sep = "\t", quote = FALSE, col.names = TRUE)
